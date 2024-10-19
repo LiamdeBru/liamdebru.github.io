@@ -365,7 +365,7 @@ playerVolumeRange.addEventListener("input", changeVolume);
 const muteVolume = function () {
   if (!audioSource.muted) {
     audioSource.muted = true;
-    playerVolumeBtn.children[0].textContent = "volume_off";
+    playerVolumeBtn.children[0].textContent = "";
   } else {
     changeVolume();
   }
