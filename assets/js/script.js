@@ -10,7 +10,8 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-1.jpg",
     posterUrl: "./assets/images/poster-1.jpg",
-    title: "CraftByte Ep. 1",
+    title: "CraftByte Podcast",
+    album: "19|10",
     year: 2024,
     artist: "Liam Bury",
     musicPath: "./assets/music/craftbyte.wav",
