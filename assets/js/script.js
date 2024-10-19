@@ -347,11 +347,11 @@ const changeVolume = function () {
   audioSource.muted = false;
 
   if (audioSource.volume <= 0.1) {
-    playerVolumeBtn.children[0].textContent = "volume_mute";
+    playerVolumeBtn.children[0].textContent = "";
   } else if (audioSource.volume <= 0.5) {
-    playerVolumeBtn.children[0].textContent = "volume_down";
+    playerVolumeBtn.children[0].textContent = "";
   } else {
-    playerVolumeBtn.children[0].textContent = "volume_up";
+    playerVolumeBtn.children[0].textContent = "";
   }
 }
 
