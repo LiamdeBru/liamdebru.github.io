@@ -9,7 +9,7 @@
     <!-- <script src='main.js'></script> -->
 </head>
 <body>
-
+    <audio id="myAudio" src="tune.mp3" loop></audio>
     <table class="title-table">
         <tr>
             <td class="gif-cell">
@@ -44,5 +44,18 @@
             <!-- Add more GIFs as needed -->
         </div>
     </footer>
+    <script>
+        // Function to play the audio
+        function playAudio() {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+            document.removeEventListener('click', playAudio);  // Remove listener after playing
+            document.removeEventListener('keypress', playAudio);  // For keyboard interaction
+        }
+
+        // Add event listeners for interaction
+        document.addEventListener('click', playAudio);
+        document.addEventListener('keypress', playAudio);
+    </script>
 </body>
 </html>
